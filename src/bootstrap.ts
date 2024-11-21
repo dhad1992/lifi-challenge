@@ -3,12 +3,19 @@ import { getEnv } from "./util/env";
 import { fastify } from "fastify";
 import events from "./routes/events";
 
+
+/**
+ * Return an instance of fastify with the routes
+ */
 export async function bootstrap() {
   const server = fastify();
   await events(server);
   return server;
 }
 
+/**
+ * Create a mongoDB Connection
+ */
 export async function getMongoConnection() {
   const DB_USER = getEnv("MONGO_USER");
   const DB_PASSWORD = getEnv("MONGO_PASSWORD");

@@ -109,7 +109,7 @@ export class CollectedEventRepository {
     }
 &nbsp;
     public async query(args: any, max: number = <span class="branch-0 cbranch-no" title="branch not covered" >100,</span> offset: number = <span class="branch-0 cbranch-no" title="branch not covered" >0)</span> {
-        return CollectedEventModel.find(args).limit(max).skip(offset).exec();
+        return CollectedEventModel.find(args).limtest(max).skip(offset).exec();
     }
 &nbsp;
     public <span class="fstat-no" title="function not covered" >async </span>getLastBlockNumberForNetwork(network: ChainType) {

@@ -2,6 +2,10 @@ import { getMongoConnection } from "./bootstrap";
 import { Polygon } from "./blockchain/network/Polygon";
 import { FeeScraper } from "./util/FeeScraper";
 
+
+/**
+ * Update fees for polygon
+ */
 async function updateFees() {
   await getMongoConnection();
 

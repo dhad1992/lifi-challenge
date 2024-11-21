@@ -29,7 +29,7 @@ describe("FeeCollectorContract", () => {
   });
 
   describe("getFeeCollectorEvents", () => {
-    it("should call queryFilter with correct arguments", async () => {
+    test("should call queryFilter with correct arguments", async () => {
       const fromBlock = 0;
       const toBlock = 100;
       const mockFilter = { some: "filter" };
@@ -47,7 +47,7 @@ describe("FeeCollectorContract", () => {
   });
 
   describe("parseFeeCollectorEvents", () => {
-    it("should correctly parse events", () => {
+    test("should correctly parse events", () => {
       const mockEvents = [
         {
           blockNumber: 1,

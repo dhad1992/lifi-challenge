@@ -4,7 +4,7 @@ import { getMongoConnection } from "./bootstrap";
 
 describe("Bootstrap", () => {
   describe("getMongoConnection", () => {
-    it("should call mongoose.connect with the correct connection string", async () => {
+    test("should call mongoose.connect with the correct connection string", async () => {
       const spy = jest
         .spyOn(mongoose, "connect")
         .mockResolvedValueOnce({} as any);

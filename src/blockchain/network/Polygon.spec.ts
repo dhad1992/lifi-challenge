@@ -15,7 +15,7 @@ describe("Polygon", () => {
   });
 
   describe("getFeeCollector", () => {
-    it("should return a FeeCollectorContract instance with correct parameters", () => {
+    test("should return a FeeCollectorContract instance wtesth correct parameters", () => {
       (getEnv as jest.Mock).mockImplementation(
         (key: string, defaultValue: string) => defaultValue,
       );
@@ -30,7 +30,7 @@ describe("Polygon", () => {
   });
 
   describe("getLatestBlockNumber", () => {
-    it("should call getBlockNumber and return the correct block number", async () => {
+    test("should call getBlockNumber and return the correct block number", async () => {
       const mockProvider = new ethers.providers.JsonRpcProvider();
       const mockBlockNumber = 12345;
       jest
@@ -44,7 +44,7 @@ describe("Polygon", () => {
   });
 
   describe("getNetwork", () => {
-    it("should return the correct network type", () => {
+    test("should return the correct network type", () => {
       const network = polygon.getChainName();
       expect(network).toBe(ChainType.POLYGON);
     });

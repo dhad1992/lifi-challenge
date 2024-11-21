@@ -78,7 +78,8 @@ export class FeeScraper {
         console.log(
           `Inserting ${parsedEvents.length} events current block ${currentBlockNumber}/${latestBlockNumber}`,
         );
-        // Could we make this more optimal and potentially do a fire and forget? However using that approach would present complexity as it could cause missing blocks as we are relying on the latest block
+
+        // Could we make this more optimal and potentially do a fire and forget? However, using that approach would present complexity as it could cause missing blocks as we are relying on the latest block
         await this.bulkInsertEvents(parsedEvents);
 
         // Because the block number has likely changed whilst were scraping we should update it with the latest

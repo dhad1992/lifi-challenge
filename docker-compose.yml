@@ -3,6 +3,7 @@ services:
   api:
     command: sh -c "npm run dev:api"
     build: .
+    image: lifi-fee-collector
     environment:
       NODE_ENV: development
       MONGO_USER: ${MONGO_ROOT_USER}
@@ -19,7 +20,7 @@ services:
       - database
   fee-update:
     command: sh -c "npm run dev:fee-update"
-    build: .
+    image: lifi-fee-collector
     environment:
       NODE_ENV: development
       MONGO_USER: ${MONGO_ROOT_USER}
@@ -32,6 +33,7 @@ services:
     restart: on-failure
     depends_on:
       - database
+      - api
   database:
     image: mongo:6.0
     container_name: mongodb
