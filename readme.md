@@ -19,6 +19,7 @@
 ## Running locally
 This project utilises docker-compose for local development there are two separate containers one for the api and another for scraping blockchain data and inserting the fee collected events into the database
 to start run 
+
 `npm run dev`  
 
 ## Running tests
