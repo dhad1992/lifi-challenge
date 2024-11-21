@@ -1,7 +1,6 @@
-import { getMongoConnection } from "./bootstrap";
+import { getMongoConnection } from "./util/bootstrap";
 import { Polygon } from "./blockchain/network/Polygon";
 import { FeeScraper } from "./util/FeeScraper";
-
 
 /**
  * Update fees for polygon

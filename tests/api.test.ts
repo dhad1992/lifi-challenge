@@ -1,6 +1,6 @@
 process.env.ENVIRONMENT = 'test'
 import {CollectedEventRepository} from "../src/repository/CollectedEventRepository";
-import {bootstrap} from "../src/bootstrap";
+import {bootstrap} from "../src/util/bootstrap";
 import { FastifyInstance, FastifyBaseLogger, FastifyTypeProviderDefault } from "fastify";
 import { Server, IncomingMessage, ServerResponse } from "http";
 

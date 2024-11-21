@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
-import { getEnv } from "./util/env";
+import { getEnv } from "./env";
 import { fastify } from "fastify";
-import events from "./routes/events";
-
+import events from "../routes/events";
 
 /**
  * Return an instance of fastify with the routes

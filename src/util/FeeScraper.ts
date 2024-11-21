@@ -1,7 +1,6 @@
 import { ParsedFeeCollectedEvents } from "../blockchain/FeeCollectorContract";
 import { CollectedEventRepository } from "../repository/CollectedEventRepository";
 import { CollectedEvent } from "../model/CollectedEvent";
-import { ChainType } from "../types";
 import { BlockchainNetwork } from "../blockchain/network/BlockchainNetwork";
 import { getEnv } from "./env";
 
