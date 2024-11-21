@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strict": true
+  },
+  "include": ["./src/**/*"],
+  "files": ["./src/ts-types/fastify.d.ts", "./src/ts-types/fastify-jwt.d.ts"]
+}
